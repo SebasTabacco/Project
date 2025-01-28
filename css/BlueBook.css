@@ -1,0 +1,257 @@
+/*font-family: "Merriweather", serif;*/
+body {
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 33%,
+    #2b86c5 66%,
+    #ffffff 100%
+  );
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+header img {
+  animation: girar 15s linear infinite;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+header {
+  background-color: #161896;
+  padding: 16px 0;
+}
+
+h1 {
+  font-size: 3em;
+  color: #ff4500;
+  position: relative;
+  display: inline-block;
+  position: relative;
+  bottom: 35px;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ff4500;
+  bottom: 2px;
+  left: 0;
+  animation: underline 2s infinite;
+}
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/*header h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 100;
+  font-style: italic;
+  display: inline-block;
+  position: relative;
+  bottom: 35px;
+  margin-left: 10px;
+}*/
+.homeimg img {
+  width: 650px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: -8px 8px 8px grey;
+}
+
+nav {
+  background-color: #51445a;
+  margin-bottom: 20px;
+  border-top: 1px solid whitesmoke;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  flex-grow: 1;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 3px 6px;
+  display: block;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  background-color: #ccc;
+  clear: both;
+  color: #333;
+  text-align: center;
+  padding: 5px 0;
+  margin-top: 200px;
+}
+
+nav ul li a.activo {
+  background-color: #be6115;
+}
+
+.holder {
+  max-width: 960px;
+  margin: 5px auto auto;
+  /*border-top: 1px solid whitesmoke;*/
+  /*height: 2px;
+  max-width: 200px;*/
+  padding: 0;
+  /*margin: 20px auto 0 auto;*/
+}
+
+h2 {
+  color: #f0f4f8;
+  font-weight: 400;
+}
+
+/*Inicio Home*/
+.bienbenidos {
+  width: 75%;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.testimonios {
+  width: 35%;
+  /*background-color: yellowgreen;*/
+}
+
+.columnas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bienbenidos p {
+  font-size: 15px;
+}
+
+.testimonio img {
+  width: 75%;
+  height: 75%;
+  float: right;
+  /* Mueve la imagen al borde derecho */
+  margin-left: 200px;
+  /* Opcional: agrega margen a la izquierda para espaciarla del contenido */
+}
+
+/*fin Home*/
+.OIP img {
+  width: 650px;
+  height: 350px;
+  border-radius: 20px;
+  box-shadow: -8px 8px 8px grey;
+}
+
+.accordion-button {
+  background-color: rgb(199, 58, 6);
+  margin: 2px;
+  color: black;
+}
+
+.accordion-body {
+  background-color: rgb(201, 202, 120);
+  margin: 2px;
+  color: white;
+}
+
+.carousel-item h5 {
+  background-color: #333;
+  color: aqua;
+  margin: 3%;
+}
+
+.carousel-item p {
+  color: aqua;
+  background-color: #333;
+  margin: 3px;
+}
+/*Modifico contacto*/
+.contacto {
+  display: flex;
+  gap: 24px;
+}
+.contacto div {
+  width: 100%;
+}
+.Datos {
+  font-size: 14px;
+}
+.Datos ul li {
+  font-size: 13px;
+}
+.formulario p {
+  display: flex;
+}
+.formulario p label {
+  min-width: 80px;
+  background-color: gray;
+  color: orange;
+}
+.formulario p input,
+.formulario p textarea {
+  width: 100%;
+  background-color: darkgray;
+  border-radius: 5px;
+  border: 1px solid #999;
+  font-size: 14px;
+  padding: 6px 10px;
+}
+.formulario p label {
+  display: flex;
+  align-items: center;
+}
+/*en este punto corrijo mi hijo*/
+.formulario p:nth-child(4) {
+  align-items: start;
+}
+.formulario textarea {
+  resize: none;
+  height: 150px;
+}
+/*modifico el boton de enviar*/
+.formulario input[type="submit"] {
+  background: #6da9ed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 16px;
+  padding: 6px 20px;
+  width: auto;
+  position: relative;
+  left: 5rem;
+  cursor: pointer;
+}
+/*modifico el cursor en enviar*/
+.formulario input[type="submit"]:hover {
+  background-color: #2e64a1;
+}
+/*fin contacto*/
