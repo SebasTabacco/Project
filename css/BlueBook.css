@@ -12,8 +12,11 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
-
 header img {
+  width: 7rem;
+  margin-bottom: 0;
+}
+/*header img {
   width: 8rem;
   display: inline-flex;
   animation: girar 15s linear infinite;
@@ -27,7 +30,7 @@ header img {
   to {
     transform: rotate(360deg);
   }
-}
+}*/
 
 header {
   background-color: grey;
